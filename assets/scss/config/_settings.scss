@@ -1,14 +1,30 @@
 
-$color-bg-body: green;
-$color-primary: red;
-$color-secondary: yellow;
-$color-tertiary: blue;
-$color-quartinary: aqua;
+// Colours
+$color-bg-body: #fff;
 
+$color-primary: #d84147;
+$color-secondary: #eeb9bb;
+$color-tertiary: #4d5755;
+$color-quaternary: #bfc9c7;
+$color-quinary: #80908d;
+$color-senary: #a0aba8;
+$color-septenary: #dce3e2;
+$color-octonary: #f5f9f8;
+$color-nonary: #fdfefe;
+$color-denary: #b13338;
+$color-duodenary: $color-bg-body;
 
+// Fonts
 $font-family-primary: 'Arial';
 $font-family-secondary: 'sans-serif';
 
-$font-color-primary: purple;
-$font-color-secondary: brown;
-$font-color-tertiary: gold;
+// Sizes
+$size-xxs: 11px;
+$size-xs: 12px;
+$size-s: 13px;
+$size-ms: 14px;
+$size-m: 15px;
+$size-ml: 20px;
+$size-l: 21px;
+$size-xl: 24px;
+$size-xxl: 42px;

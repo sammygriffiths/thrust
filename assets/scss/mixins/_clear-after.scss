@@ -1,0 +1,9 @@
+@mixin clear-after {
+	&:after{
+		@extend .clear;
+		content: "."; 
+		visibility: hidden; 
+		display: block; 
+		height: 0;
+	}
+}

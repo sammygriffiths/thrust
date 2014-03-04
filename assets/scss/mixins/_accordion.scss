@@ -1,0 +1,69 @@
+@mixin accordion{
+	width: $size-ten;
+	float: left;
+	color: $color-seven;
+
+	ul{
+		padding: 0;
+		li{
+			list-style: none;
+			border-bottom: 1px solid;
+			font-family: $font-family-one;
+			font-weight: $weight-three;
+			font-size: $size-two;
+			@include clear-after;
+
+
+			.accordion-head{
+				display: block;
+				text-decoration: none;
+				padding: 10px 0;
+				color: $color-seven;
+				@include clear-after;
+
+				&:before{
+					@include pseudo-block;
+					@include load-sprite($sprite-one);
+					@include accordion-icon-closed;
+					float: left;
+					margin-top: 6px;
+					margin-right: 10px;
+				}
+			}
+
+			.open{
+				&:before{
+					@include accordion-icon-open;
+				}
+			}
+
+			ul{
+				padding-left: 20px;
+
+				li{
+					list-style: none;
+					border-bottom: 0;
+					padding: 5px 0 0 0;
+					font-weight: $weight-two;
+
+					&:before{
+						content: "-";
+					}
+
+					a{
+						text-decoration: none;
+						color: $color-seven;
+
+						&:before{
+							display: none;
+						}
+					}
+				}
+			}
+
+			.accordion-content{
+				padding-bottom: 10px;
+			}
+		}
+	}
+}

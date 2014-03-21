@@ -1,30 +1,37 @@
-
 // Colours
 $color-bg-body: #fff;
 
-$color-primary: #d84147;
-$color-secondary: #eeb9bb;
-$color-tertiary: #4d5755;
-$color-quaternary: #bfc9c7;
-$color-quinary: #80908d;
-$color-senary: #a0aba8;
-$color-septenary: #dce3e2;
-$color-octonary: #f5f9f8;
-$color-nonary: #fdfefe;
-$color-denary: #b13338;
-$color-duodenary: $color-bg-body;
+$color-one: white;
+$color-two: black;
+$color-three: $color-bg-body;
 
 // Fonts
-$font-family-primary: 'Arial';
-$font-family-secondary: 'sans-serif';
+$font-family-one: 'Arial';
+$font-family-two: 'sans-serif';
 
 // Sizes
-$size-xxs: 11px;
-$size-xs: 12px;
-$size-s: 13px;
-$size-ms: 14px;
-$size-m: 15px;
-$size-ml: 20px;
-$size-l: 21px;
-$size-xl: 24px;
-$size-xxl: 42px;
+$size-one: 11px;
+$size-two: 12px;
+$size-three: 13px;
+$size-four: 14px;
+$size-five: 15px;
+$size-six: 20px;
+$size-seven: 21px;
+$size-eight: 24px;
+$size-nine: 25px;
+$size-ten: 40px;
+
+// Weights
+$weight-one: 100; //thin
+$weight-two: 200; //extra-light
+$weight-three: 300; //light
+$weight-four: 400; //normal
+$weight-five: 500; //medium
+$weight-six: 600; //semi-bold
+$weight-seven: 700; //bold
+$weight-eight: 800; //extra-bold
+$weight-nine: 900; //ultra-bold
+
+// Sprites
+$sprite-one: url('../img/sprite_1x.png');
+$sprite-two: url('../img/sprite_2x.png');

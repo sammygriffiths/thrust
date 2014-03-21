@@ -11,11 +11,3 @@
 .clear {
 	clear: both;
 }
-
-.clear-after {
-	@extend .clear;
-	content: "."; 
-	visibility: hidden; 
-	display: block; 
-	height: 0;
-}

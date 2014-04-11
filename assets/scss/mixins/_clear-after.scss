@@ -1,6 +1,6 @@
 @mixin clear-after {
 	&:after{
-		@extend .clear;
+		clear: both;
 		content: "."; 
 		visibility: hidden; 
 		display: block; 

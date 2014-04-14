@@ -1,6 +1,4 @@
-$columns: 12;
-
-@mixin columns($number, $width: 100%){
+@mixin columns($number, $width: 100%, $columns: 12){
 	display: block;
 	@include border-box;
 	width: (($width / $columns) * $number);

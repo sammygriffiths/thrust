@@ -1,3 +1,6 @@
+//Responsive?
+$responsive: false;
+
 // Colours
 $color-bg-body: #fff;
 
@@ -35,3 +38,7 @@ $weight-nine: 900; //ultra-bold
 // Sprites
 $sprite-one: url('../img/sprite_1x.png');
 $sprite-two: url('../img/sprite_2x.png');
+
+//Break points
+$break-s: 480px;
+$break-m: 735px;

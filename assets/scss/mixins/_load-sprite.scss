@@ -4,7 +4,9 @@
 	background-position: 0 0;
 	background-size: 500px 200px;
 
-	@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-		background-image: $two-times-sprite;
+	@if responsive{
+		@include retina {
+			background-image: $two-times-sprite;
+		}
 	}
 }

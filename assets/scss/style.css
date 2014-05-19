@@ -1,3 +1,11 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -356,7 +364,6 @@ table {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-moz-keyframes spin-animation {
   100% {
     -webkit-transform: rotate(360deg);
@@ -364,7 +371,6 @@ table {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-o-keyframes spin-animation {
   100% {
     -webkit-transform: rotate(360deg);
@@ -372,7 +378,6 @@ table {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @keyframes spin-animation {
   100% {
     -webkit-transform: rotate(360deg);
@@ -380,21 +385,13 @@ table {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 body {
   background-color: white;
   font-family: "Arial"; }
 
 #container {
-  display: block;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-  width: 66.66667%;
-  background-color: #4472B9;
+  width: 50%;
+  background-color: white;
   margin: 0 auto;
   text-align: center;
   font-size: 40px;

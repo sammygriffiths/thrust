@@ -1,10 +1,10 @@
 #container {
-	@include columns(8);
-	background-color: #4472B9;
+	@include span(1/2);
+	background-color: $color-one;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 40px;
 	padding: 10px 0;
 	border: 3px solid;
-	@include border-radius(10px, 10px, 10px, 10px);
+	@include border-radius(10px);
 }

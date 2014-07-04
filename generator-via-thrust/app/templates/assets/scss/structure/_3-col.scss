@@ -1,0 +1,16 @@
+@mixin three-col($element: figure){
+	@include structure;
+
+	#{$element}{
+		@include cols(1/3, $column-margin);
+		float: left;
+
+		@include breakpoint($break-s) {
+			width: 100%;
+			float: none;
+			margin-bottom: $mobile-column-margin;
+			margin-right: 0;
+			display: block;
+		}
+	}
+}

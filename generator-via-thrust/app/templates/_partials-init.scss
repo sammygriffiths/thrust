@@ -1,0 +1,4 @@
+@import 'global';
+<% for(var i=0; i<pages.length; i++) {%>
+	@import '<%= _.slugify(pages[i]) %>/init';
+<% } %>

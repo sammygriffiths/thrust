@@ -1,0 +1,5 @@
+@mixin full-width{
+	@include structure;
+	display: block;
+	width: 100%;
+}

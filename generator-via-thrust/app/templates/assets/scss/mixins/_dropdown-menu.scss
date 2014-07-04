@@ -1,0 +1,22 @@
+@mixin dropdown-menu {
+	position: relative;
+	&:hover ul {
+		left: 0;
+	}
+	ul {
+		list-style: none;
+		position: absolute;
+		left: -9999px;
+		z-index: 1001;
+		li {
+			display: block;
+			float: none;
+			a {
+				white-space: nowrap;
+				&:hover {
+					background-color: red;
+				}
+			}
+		}
+	}
+}

@@ -1,16 +1,14 @@
-@mixin two-col($element: article){
+@mixin athena($element: figure){
 	@include structure;
-	max-width: 780px;
 
 	#{$element}{
-		@include cols(1/2, 10%);
 		float: left;
-
+		@include cols(1/4, $column-margin);
 
 		@include breakpoint($break-s) {
 			width: 100%;
 			float: none;
-			margin-bottom: $mobile-column-margin;
+			margin-bottom: 10px;
 			margin-right: 0;
 			display: block;
 		}

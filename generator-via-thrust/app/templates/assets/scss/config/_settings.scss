@@ -1,5 +1,5 @@
 //Responsive?
-$responsive: false;
+<% if(responsive) {%>$responsive: true;<% }else{ %>$responsive: false;<% } %>
 
 // Colours
 $color-bg-body: #fff;

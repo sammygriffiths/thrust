@@ -4,7 +4,7 @@
 	background-position: 0 0;
 	background-size: 500px 200px;
 
-	@if responsive{
+	@if $responsive{
 		@include retina {
 			background-image: $two-times-sprite;
 		}

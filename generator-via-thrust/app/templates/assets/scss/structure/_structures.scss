@@ -6,4 +6,21 @@ $mobile-column-margin: 3.3333%;
 	margin-bottom: 20px;
 	@include clear-after;
 	margin-top: 20px;
+	background-color: pink;
+
+	
+	min-height: 200px;
+
+	article, figure, aside{
+		min-height: 200px;
+	}
+	article{
+		background-color: red;
+	}
+	figure{
+		background-color: blue;
+	}
+	aside{
+		background-color: purple;
+	}
 }

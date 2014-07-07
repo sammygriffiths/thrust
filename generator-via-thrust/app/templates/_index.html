@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title><%= siteName %></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Via Creative"> 
 		
         <!-- - - - - - - - - - - - - - - - 
 
@@ -31,18 +32,56 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <% for(var i=0; i<pages.length; i++) {%>
-            <h1><%= pages[i] %></h1>
-            <% for(var i=0; i<structures.length; i++) {%>
-                <h1><%= structures[i][0] %></h1>
-                <h2><%= structures[i][1] %></h2>
-                <h3><%= structures[i][2] %></h3>
-            <% } %>
+        <header class="primary">
+            <nav>
+                <ul>
+                    <% for(var i=0; i<Object.keys(pages).length; i++){ %><li><a href="#<%= pages['page_'+i][1] %>"><%= pages['page_'+i][0] %></a></li>
+                    <% } %>
+                </ul>
+            </nav>
+        </header>
+
+        <% for(var i=0; i<Object.keys(pages).length; i++) {%>
+        <h1 style="text-align: center" id="<%= pages['page_'+i][1] %>"><%= pages['page_'+i][0] %></h1>
+        <section class="<%= pages['page_'+i][1] %>-page">
+            <% 
+                var page = pages['page_'+i][1];
+                for (var key in structures[page]) {
+                    if (structures[page].hasOwnProperty(key)) { 
+                        var structure = structures[page][key];
+
+
+                        if (availableStructures.hasOwnProperty(structure)){ 
+
+            %>
+            <div class="<%= key %>"><%
+                            for(var o=0; o<availableStructures[structure].length; o++){%>
+
+                <<%= availableStructures[structure][o] %><% if(o == availableStructures[structure].length - 1 && availableStructures[structure].length !== 1){ %> class="last"<% } %>>
+                </<%= availableStructures[structure][o] %>>
+                        <% } %>
+            </div>
+            <%
+
+                        }
+
+                        else { %>
+            <pre><%= pages['page_'+i][1]+'-'+key+' - '+structure %> isn't a valid structure</pre>
+                        <% }
+
+
+                    }
+                } %>
+        </section>
         <% } %>
 
+        <footer class="primary">
+        </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
+        <script src="assets/js/vendor/jquery/dist/jquery.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 

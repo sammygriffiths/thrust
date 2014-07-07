@@ -1,0 +1,11 @@
+.<%= pageName %>-page{
+    <% 
+        var page = pageName.toLowerCase();
+        for (var key in structures[page]) {
+            if (structures[page].hasOwnProperty(key)) { %>
+    .<%= key %>{
+        @include <%= structures[page][key] %>;
+    }
+            <% }
+    } %>
+}

@@ -1,9 +1,11 @@
-@mixin three-col($element: figure){
+@mixin poseidon($element: article){
 	@include structure;
+	max-width: 780px;
 
 	#{$element}{
-		@include cols(1/3, $column-margin);
+		@include cols(1/2, 10%);
 		float: left;
+
 
 		@include breakpoint($break-s) {
 			width: 100%;

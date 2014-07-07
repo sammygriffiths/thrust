@@ -1,16 +1,17 @@
-@mixin three-col-sidebar-left($article-element: figure, $sidebar-element: aside){
+@mixin hermes_right($article-element: figure, $sidebar-element: aside){
 	@include structure;
-
-	#{$sidebar-element}{
-		@include cols(1/4, $column-margin);
-		float: left;
-	}
 
 	#{$article-element}{
 		@include cols(1.5/4, $column-margin);
 		float: left;
 	}
-	
+
+	#{$sidebar-element}{
+		@include cols(1/4, $column-margin);
+		float: right;
+		margin-right: 0;
+	}
+
 	@include breakpoint($break-s) {
 		#{$sidebar-element}, #{$article-element}{
 			width: 100%;

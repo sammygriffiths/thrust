@@ -1,4 +1,4 @@
-@mixin four-col-sidebar-left($article-element: figure, $sidebar-element: aside, $wrapper: article){
+@mixin athena_left($article-element: figure, $sidebar-element: aside, $wrapper: article){
 	@include structure;
 	margin-bottom: 0;
 

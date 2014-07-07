@@ -2,8 +2,7 @@
   "name": "Thrust",
   "version": "0.0.1",
   "dependencies": {
-    "modernizr": "latest",
-    "jquery": "latest"
+    "jquery": "1.11.1"
   },
   "private": true
 }

@@ -1,10 +1,10 @@
 {
-  "name": "generator-via-thrust",
+  "name": "generator-thrust",
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "sammygriffiths/generator-via-thrust",
+  "repository": "sammygriffiths/generator-thrust",
   "author": {
     "name": "",
     "email": "",

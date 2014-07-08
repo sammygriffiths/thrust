@@ -2,7 +2,7 @@
 'use strict';
 var assert = require('assert');
 
-describe('via-thrust generator', function () {
+describe('thrust generator', function () {
   it('can be imported without blowing up', function () {
     var app = require('../app');
     assert(app !== undefined);

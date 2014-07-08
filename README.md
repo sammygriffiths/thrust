@@ -67,6 +67,7 @@ To Do
 - [ ] Get Thrust to create project directory so **_you_** don't have to!
 - [ ] Have it ask about optional extras (slick, colorbox etc.)
 - [ ] Have it ask about JS functions and generate example html (accordions etc.)
+- [ ] Ask about breakpoints if responsive.
 
 
 [via]:http://www.viacreative.co.uk

@@ -68,6 +68,7 @@ To Do
 - [ ] Have it ask about optional extras (slick, colorbox etc.)
 - [ ] Have it ask about JS functions and generate example html (accordions etc.)
 - [ ] Ask about breakpoints if responsive.
+- [ ] Possibly have it initialise git repo in project folder once generated.
 
 
 [via]:http://www.viacreative.co.uk

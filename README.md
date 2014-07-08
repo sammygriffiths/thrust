@@ -64,6 +64,7 @@ Version
 To Do
 ----
 - [ ] Improve structures syntax, so that each page you've entered has it's own prompt.
+- [ ] Incorporate grunt.
 - [ ] Get Thrust to create project directory so **_you_** don't have to!
 - [ ] Have it ask about optional extras (slick, colorbox etc.)
 - [ ] Have it ask about JS functions and generate example html (accordions etc.)

@@ -1,47 +1,67 @@
-# generator-thrust [![Build Status](https://secure.travis-ci.org/sammygriffiths/generator-thrust.png?branch=master)](https://travis-ci.org/sammygriffiths/generator-thrust)
+Thrust
+=========
 
-> [Yeoman](http://yeoman.io) generator
+A really simple front-end web application bootstrap for the [Via] development team.
 
+Originally cloned from HTML5 Boilerplate, we've restructured it to our liking and included a default SASS directory structure.
 
-## Getting Started
+####New with v 1.0
+Now thrust is using [yeoman] & [bower] so you can get up and running even faster.
 
-### What is Yeoman?
+Usage
+-----
+You'll have to have Node package manager installed to get thrust's dependencies, it comes with node js these days, so go to http://nodejs.org/ and install it.
 
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```bash
-$ npm install -g yo
+If you don't already have yeoman & bower, simply run:
+```
+npm install -g yo
+npm install -g bower
 ```
 
-### Yeoman Generators
+Now that's taken care of, simply clone thrust down and:
+```
+cd [thrust directory]
+npm link
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+cd [your project directory]
+yo thrust
+```
+Then just answer the questions and you're good to go.
 
-To install generator-thrust from npm, run:
+Page Structure Syntax
+----
+Although the questions are reasonably straight forward, the page structures one requires the correct syntax, which is thus:
+```
+//comma separated list
+page-name|section-name|structure-name
 
-```bash
-$ npm install -g generator-thrust
+e.g
+home|slider|zeus, news|intro|poseidon
 ```
 
-Finally, initiate the generator:
+Available Page Structures
+---
 
-```bash
-$ yo thrust
-```
+Now you may have noticed we decided to name the page structures after greek gods, that's just how we roll at via.
+Plus we thought all that 'two-col-sidebar-right' business was rather inelegant.
 
-### Getting To Know Yeoman
+| Structure               | God Name          |
+| ------------------------|-------------------|
+| Full Width              | zeus              |
+| Two Col                 | poseidon          |
+| Two Col Sidebar Left    | poseidon_left     |
+| Two Col Sidebar Right   | poseidon_right    |
+| Three Col               | hermes		      |
+| Three Col Sidebar Left  | hermes_left       |
+| Three Col Sidebar Right | hermes_right      |
+| Four Col                | athena            |
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+Version
+----
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+1.0
 
 
-## License
-
-MIT
+[via]:http://www.viacreative.co.uk
+[yeoman]:http://yeoman.io/
+[bower]:http://bower.io/

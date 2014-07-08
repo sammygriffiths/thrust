@@ -1,7 +1,0 @@
-@mixin rotate($angle: 45deg){
-	-webkit-transform: rotate($angle);
-  	-moz-transform:    rotate($angle);
-  	-ms-transform:     rotate($angle);
-  	-o-transform:      rotate($angle);
-  	transform:         rotate($angle);
-}

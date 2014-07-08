@@ -6,11 +6,11 @@ A really simple front-end web application bootstrap for the [Via] development te
 Originally cloned from HTML5 Boilerplate, we've restructured it to our liking and included a default SASS directory structure.
 
 ####New with v 1.0
-Now thrust is using [yeoman] & [bower] so you can get up and running even faster.
+Now Thrust is using [yeoman] & [bower] so you can get up and running even faster.
 
 Usage
 -----
-You'll have to have Node package manager installed to get thrust's dependencies, it comes with node js these days, so go to http://nodejs.org/ and install it.
+You'll have to have Node package manager installed to get Thrust's dependencies, it comes with node js these days, so go to http://nodejs.org/ and install it.
 
 If you don't already have yeoman & bower, simply run:
 ```
@@ -18,7 +18,7 @@ npm install -g yo
 npm install -g bower
 ```
 
-Now that's taken care of, simply clone thrust down and:
+Now that's taken care of, simply clone Thrust down and:
 ```
 cd [thrust directory]
 npm link
@@ -60,6 +60,13 @@ Version
 ----
 
 1.0
+
+To Do
+----
+- [ ] Improve structures syntax, so that each page you've entered has it's own prompt.
+- [ ] Get Thrust to create project directory so _you_** don't have to!
+- [ ] Have it ask about optional extras (slick, colorbox etc.)
+- [ ] Have it ask about JS functions and generate example html (accordions etc.)
 
 
 [via]:http://www.viacreative.co.uk

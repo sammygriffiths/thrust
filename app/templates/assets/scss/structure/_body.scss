@@ -1,4 +1,11 @@
 body {
 	background-color: $color-bg-body;
+	color: $color-two;
 	font-family: $font-family-one;
+	overflow-x: hidden;
+	min-width: $size-ten;
+}
+
+html{
+	overflow: scroll;
 }

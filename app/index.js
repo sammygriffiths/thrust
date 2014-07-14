@@ -5,7 +5,6 @@ var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var chalk = require('chalk');
 
-
 var ViaThrustGenerator = yeoman.generators.Base.extend({
 
     questions: function() {
@@ -19,15 +18,28 @@ var ViaThrustGenerator = yeoman.generators.Base.extend({
             name: 'siteName',
             message: 'What is the name of the site?'
         },{
-            name: 'pages',
-            message: 'What are the names of the pages? (Comma seperated)'
-        },{
             type: 'confirm',
             name: 'responsive',
             message: 'Is the site responsive?'
         },{
+            name: 'pages',
+            message: 'What are the names of the pages? (Comma seperated)'
+        },{
             name: 'structures',
             message: 'What page structures would you like to use? (Special syntax)'
+        },{
+            type: 'checkbox',
+            name: 'extras',
+            message: 'What optional extras would you like?',
+            choices: [{
+                name: 'Slick Slider',
+                value: 'includeSlick',
+                checked: false
+            },{
+                name: 'Colorbox',
+                value: 'includeColorbox',
+                checked: false
+             }],
         }];
 
 
@@ -35,6 +47,13 @@ var ViaThrustGenerator = yeoman.generators.Base.extend({
         this.prompt(prompts, function (props) {
             this.siteName = props.siteName;
             this.responsive = props.responsive;
+            // this.extras = props.extras;
+
+            function includesExtra(extra) {
+                return props.extras && props.extras.indexOf(extra) !== -1;
+            }
+            this.includesColorbox = includesExtra('includeColorbox');
+            this.includesSlick = includesExtra('includeSlick');
 
             this.pageStrings = props.pages.replace(/, /g,',').split(',');
             this.pages = {};

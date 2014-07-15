@@ -1,0 +1,3 @@
+@import 'global/init';
+<% for(var i=0; i<Object.keys(pages).length; i++) {%>@import '<%= pages['page_'+i][1] %>/init';
+<% } %>

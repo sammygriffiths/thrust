@@ -7,5 +7,18 @@ body {
 }
 
 html{
-	overflow: scroll;
+	overflow-x: scroll;
+}<% if(responsive) {%>
+	
+body{
+	@media (max-width: 960px) {
+		min-width: 100%;
+	}
 }
+
+
+html{
+	@media (min-width: 960px) { 
+		overflow-x: hidden; 
+	}
+}<% } %>
